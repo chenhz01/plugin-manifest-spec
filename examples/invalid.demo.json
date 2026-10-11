@@ -1,0 +1,25 @@
+{
+  "name": "Market_Research",
+  "skills": [
+    {
+      "id": "price-check",
+      "path": "a"
+    },
+    {
+      "id": "price-check",
+      "path": "b"
+    }
+  ],
+  "connectors": [
+    {
+      "id": "x",
+      "auth": "oauth"
+    }
+  ],
+  "commands": [
+    {
+      "name": "run"
+    }
+  ],
+  "subagents": []
+}

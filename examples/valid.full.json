@@ -1,0 +1,40 @@
+{
+  "name": "market-research-full",
+  "version": "1.0.0-rc.1",
+  "description": "Price benchmarking plugin for analysts",
+  "skills": [
+    {
+      "id": "price-check",
+      "path": "skills/price-check/SKILL.md"
+    },
+    {
+      "id": "comp-screen",
+      "path": "skills/comp-screen/SKILL.md"
+    }
+  ],
+  "connectors": [
+    {
+      "id": "market-feed",
+      "auth": "oauth",
+      "scopes": [
+        "read:quotes",
+        "read:fundamentals"
+      ],
+      "permissions": [
+        "read"
+      ]
+    }
+  ],
+  "commands": [
+    {
+      "name": "benchmark",
+      "description": "Run a price benchmark"
+    }
+  ],
+  "subagents": [
+    {
+      "name": "comp-analyst",
+      "prompt_path": "agents/comp-analyst.md"
+    }
+  ]
+}
