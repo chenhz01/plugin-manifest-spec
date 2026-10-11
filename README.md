@@ -4,6 +4,8 @@ A host-agnostic JSON manifest that declares an agent plugin's skills, connectors
 
 **Confidence: High (85%)** that the four-block structure is the right decomposition; it is observable across multiple official plugin repos today.
 
+<p align="center"><img src="docs/demo.gif" alt="demo" width="720"></p>
+
 ## Problem
 
 Agent plugin packaging is currently host-proprietary: the same four capability blocks exist everywhere, but every host invents its own directory layout and none exposes an installability contract.
